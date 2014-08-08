@@ -1,0 +1,3 @@
+{
+    "db": {"mongoDbUrl": "mongodb://localhost/popyoyo"}
+}
