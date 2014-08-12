@@ -1,3 +1,25 @@
 {
-    "db": {"mongoDbUrl": "mongodb://localhost/popyoyo"}
+    "common":{
+        "name": "General Configuration"
+    },
+    
+    "server":{
+        "name": "Http Server Configuration",
+        "hostIp":{
+            "name":"Server Host IP",
+            "value":"0.0.0.0"
+        },
+        "hostPort":{
+            "name":"Server Listening Port",
+            "value":8080
+        }
+    },
+    
+    "db": {
+        "name":"Database Configuration",
+        "mongoDbUrl": {
+            "name":"Connect String to Mongo Database",
+            "value":"mongodb://localhost/popyoyo"
+        }
+    }
 }
