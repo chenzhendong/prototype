@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html ng-app="prototype">
-    <head>
-        <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
-        <script type="text/javascript" src="js/angular.min.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
-    </head>
-    <body>
-        {{"Hello, world!"}}
-    </body>
+<html ng-app="Main">
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/htmlSegment.js"></script>
+</head>
+
+<body>
+    <head-nav-bar></head-nav-bar>
+    <h1>{{"hello " + "world"}}</h1>
+    <foot-nav-bar></foot-nav-bar>
+    
+</body>
+
 </html>
