@@ -13,3 +13,11 @@ htmlSegment.directive('footNavBar', function() {
         templateUrl: 'html/footNavBar.html'
     };
 });
+
+
+htmlSegment.directive('login', function() {
+    return {
+        restrict: 'E',
+        templateUrl: 'html/login.html'
+    };
+});

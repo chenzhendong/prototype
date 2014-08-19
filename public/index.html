@@ -8,15 +8,19 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <script src="js/lib/jquery-2.1.1.min.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>
-    <script src="js/lib/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.9/angular-route.min.js"></script>
+    <script src="https://code.angularjs.org/1.2.9/angular-resource.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/htmlSegment.js"></script>
 </head>
 
 <body>
-    <head-nav-bar></head-nav-bar>
-    <h1>{{"hello " + "world"}}</h1>
-    <foot-nav-bar></foot-nav-bar>
+    <div class="container">
+        <head-nav-bar></head-nav-bar>
+        <div ng-view></div>
+        <foot-nav-bar></foot-nav-bar>
+    </div>
     
 </body>
 
