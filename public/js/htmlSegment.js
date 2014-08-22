@@ -1,4 +1,4 @@
-var htmlSegment = angular.module('HtmlSegment', []);
+var htmlSegment = angular.module('htmlSegment', []);
 
 htmlSegment.directive('headNavBar', function() {
     return {

@@ -1,9 +1,25 @@
-var main = angular.module('Main', ['HtmlSegment', 'ngRoute']);
+'use strict';
 
-main.config(['$routeProvider', function($routeProvider) {
-  $routeProvider.
-      when('/login', {templateUrl: 'html/login.html'}).
-      otherwise({redirectTo: '/'});
+var app = angular.module('main', ['ngRoute', 'htmlSegment']);
+
+app.controller('RootCtrl', ['$scope', function($scope){
+    $scope.title = "Home Page";
+}]);
+
+app.controller('CatsCtrl', ['$scope', function($scope){
+    $scope.title = "Cats Page";
+}]);
+
+app.config(['$routeProvider', function($routeProvider){
+    console.log($routeProvider);
+    $routeProvider
+        .when('/', {
+            controller: 'RootCtrl',
+            templateUrl: 'html/login.html'
+        })
+        .otherwise({
+            redirectTo : '/'
+        });
 }]);
 
 
