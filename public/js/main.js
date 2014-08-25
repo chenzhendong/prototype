@@ -13,7 +13,7 @@ app.controller('CatsCtrl', ['$scope', function($scope){
 app.config(['$routeProvider', function($routeProvider){
     console.log($routeProvider);
     $routeProvider
-        .when('/', {
+        .when('/login', {
             controller: 'RootCtrl',
             templateUrl: 'html/login.html'
         })
